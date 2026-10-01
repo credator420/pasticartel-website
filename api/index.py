@@ -3,6 +3,10 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from fastapi.responses import FileResponse
+import os
+
+
 app = FastAPI(title="PASTICARTEL API")
 
 app.add_middleware(
@@ -14,6 +18,14 @@ app.add_middleware(
 )
 
 DB_FILE = "/tmp/pasticartel.db"
+
+@app.get("/")
+def serve_home():
+    # If the root URL ever hits FastAPI directly, return index.html
+    html_path = os.path.join(os.path.dirname(__file__), "..", "index.html")
+    if os.path.exists(html_path):
+        return FileResponse(html_path)
+    return {"status": "PASTICARTEL API running", "docs": "/docs"}
 
 def get_db():
     conn = sqlite3.connect(DB_FILE)
