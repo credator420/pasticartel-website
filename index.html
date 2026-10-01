@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PASTICARTEL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="status-pulse"></span>
+        PASTI<span>CARTEL</span>
+      </a>
+      <nav>
+        <a href="#music">Drops</a>
+        <a href="#crew">Crew</a>
+        <a href="#shows">Live</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- COMPACT HERO -->
+    <section class="hero">
+      <div class="hero-chip">
+        <span class="chip-dot"></span>
+        <span>UNDERGROUND // CZ</span>
+      </div>
+      <h1 class="hero-title">
+        <span id="typewriterText"></span><span class="typewriter-cursor">_</span>
+      </h1>
+      <p class="hero-sub">Raw cadence, uncompromised 808s, and pure underground sound.</p>
+      <div class="hero-btns">
+        <a href="#music" class="btn btn-primary">Discography</a>
+        <a href="#shows" class="btn btn-secondary">Tour Dates</a>
+      </div>
+    </section>
+
+    <!-- DISCOGRAPHY (Compact 5-column grid) -->
+    <section id="music">
+      <div class="sec-head">
+        <h2>Discography</h2>
+        <span class="sec-counter">10 DROPS</span>
+      </div>
+      <div class="disco-grid" id="discoContainer">
+        <div class="loader">Fetching catalog...</div>
+      </div>
+    </section>
+
+    <!-- CREW (Tight Horizontal / 4-Col Grid) -->
+    <section id="crew">
+      <div class="sec-head">
+        <h2>The Collective</h2>
+        <span class="sec-counter">ROSTER</span>
+      </div>
+      <div class="roster-grid" id="rosterContainer">
+        <div class="loader">Loading crew...</div>
+      </div>
+    </section>
+
+    <!-- LIVE & EVENTS -->
+    <section id="shows">
+      <div class="sec-head">
+        <h2>Tour & Live Dates</h2>
+        <span class="sec-counter">2026</span>
+      </div>
+      <div class="events-list" id="eventsContainer">
+        <div class="loader">Loading dates...</div>
+      </div>
+    </section>
+
+    <!-- BOOKING STRIP -->
+    <section id="contact" class="booking-strip">
+      <div>
+        <h3>Booking & Features</h3>
+        <p>Club sets, production, verses & licensing.</p>
+      </div>
+      <a href="mailto:booking@pasticartel.com" class="btn btn-primary">booking@pasticartel.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 PASTICARTEL</span>
+      <span class="footer-tag">CZ UNDERGROUND</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
